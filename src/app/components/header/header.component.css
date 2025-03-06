@@ -1,0 +1,95 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; /* Fundo branco */
+  padding: 10px 20px;
+  border-bottom: 1px solid #e0e0e0; /* Borda inferior */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+  color: #333333; /* Cor do texto */
+  margin-bottom: 20px;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre o ícone e o texto */
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #333333; /* Cor do ícone de voltar */
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: rgba(0, 0, 0, 0.05); /* Efeito hover no botão */
+}
+
+.panel-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333333; /* Cor do texto */
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espaço entre o ícone do usuário e o ícone de logout */
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #007bff; /* Cor de fundo do ícone */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: white; /* Cor do texto do ícone */
+  margin-right: 10px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-size: 16px; /* Tamanho do nome */
+  font-weight: 500; /* Peso da fonte */
+  color: #333333; /* Cor do nome */
+}
+
+.user-email {
+  font-size: 14px; /* Tamanho do e-mail */
+  color: #666666; /* Cor do e-mail */
+  opacity: 0.8; /* Opacidade do e-mail */
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  color: #333333; /* Cor do ícone de logout */
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: rgba(0, 0, 0, 0.05); /* Efeito hover no botão */
+}

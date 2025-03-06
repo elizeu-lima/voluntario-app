@@ -1,0 +1,19 @@
+<div class="recommended-actions-container">
+  <h2>Recomendados para Você</h2>
+  <div class="actions-grid">
+    <div *ngFor="let action of actions" class="action-card">
+      <!-- Espaço para imagem -->
+      <div class="action-image">
+        <img [src]="action.image" alt="{{ action.title }}" *ngIf="action.image; else placeholder">
+        <ng-template #placeholder>
+          <div class="image-placeholder">Imagem não disponível</div>
+        </ng-template>
+      </div>
+
+      <h3>{{ action.title }}</h3>
+      <p class="organization">{{ action.organization }}</p>
+      <p class="date"><strong>Data: {{ action.date }}</strong></p>
+      <button class="details-button">Ver Detalhes</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="complete-profile-container">
+  <h1>Complete seu Perfil</h1>
+
+  <section class="profile-section">
+    <h2>Perfil do Voluntário</h2>
+    <p>Complete seu perfil para melhorar suas chances de encontrar oportunidades de voluntariado.</p>
+  </section>
+
+  <form (ngSubmit)="onSubmit()" class="profile-form">
+    <div class="form-group">
+      <label for="fullName">Nome completo</label>
+      <input type="text" id="fullName" name="fullName" [(ngModel)]="fullName" required>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Telefone</label>
+      <input type="text" id="phone" name="phone" [(ngModel)]="phone" required>
+    </div>
+
+    <div class="form-group">
+      <label for="city">Cidade</label>
+      <input type="text" id="city" name="city" [(ngModel)]="city" required>
+    </div>
+
+    <div class="form-group">
+      <label for="bio">Biografia</label>
+      <textarea id="bio" name="bio" [(ngModel)]="bio" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="skills">Habilidades</label>
+      <input type="text" id="skills" name="skills" [(ngModel)]="skills" required>
+    </div>
+
+    <div class="form-group">
+      <label for="preferences">Preferências</label>
+      <input type="text" id="preferences" name="preferences" [(ngModel)]="preferences" required>
+    </div>
+
+    <button type="submit" class="save-button">Salvar Perfil</button>
+  </form>
+</div>

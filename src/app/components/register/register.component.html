@@ -1,0 +1,43 @@
+<div class="register-container">
+  <h1>Cadastro</h1>
+  <p>Crie sua conta para começar a usar a plataforma</p>
+
+  <div class="user-type-selector">
+    <div class="user-type-option" (click)="selectUserType('volunteer')" [class.selected]="userType === 'volunteer'">
+      <fa-icon [icon]="faUser"></fa-icon>
+      <span>Pessoa</span>
+    </div>
+    <div class="user-type-option" (click)="selectUserType('organization')" [class.selected]="userType === 'organization'">
+      <fa-icon [icon]="faBuilding"></fa-icon>
+      <span>Organização</span>
+    </div>
+  </div>
+
+  <form (ngSubmit)="onSubmit()">
+    <div *ngIf="userType === 'volunteer'">
+      <label for="fullName">Nome Completo</label>
+      <input type="text" id="fullName" name="fullName" [(ngModel)]="fullName" required>
+    </div>
+
+    <div *ngIf="userType === 'organization'">
+      <label for="orgName">Nome da Organização</label>
+      <input type="text" id="orgName" name="orgName" [(ngModel)]="orgName" required>
+
+      <label for="orgType">Tipo de Organização</label>
+      <input type="text" id="orgType" name="orgType" [(ngModel)]="orgType" required>
+    </div>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" [(ngModel)]="email" required>
+
+    <label for="password">Senha</label>
+    <input type="password" id="password" name="password" [(ngModel)]="password" required>
+
+    <label for="confirmPassword">Confirmar Senha</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" [(ngModel)]="confirmPassword" required>
+
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <p>Já tem uma conta? <a href="/login">Faça login</a></p>
+</div>

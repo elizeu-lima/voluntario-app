@@ -1,0 +1,75 @@
+.recommended-actions-container {
+  margin-bottom: 20px;
+}
+
+.actions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.action-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Alinhar todo o conteúdo à esquerda */
+}
+
+.action-image {
+  width: 100%;
+  height: 150px;
+  background-color: #f4f4f4; /* Cor de fundo do espaço da imagem */
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.action-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem cubra o espaço */
+}
+
+.image-placeholder {
+  color: #666666;
+  font-size: 14px;
+}
+
+.action-card h3 {
+  font-size: 20px; /* Tamanho maior para o título */
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #333333; /* Cor escura para o título */
+}
+
+.organization {
+  font-size: 14px; /* Tamanho menor para o texto da organização */
+  color: #666666; /* Cor mais clara para o texto */
+  margin-bottom: 5px;
+}
+
+.date {
+  font-size: 14px; /* Tamanho menor para a data */
+  color: #666666; /* Cor mais clara para a data */
+  margin-bottom: 15px;
+}
+
+.details-button {
+  width: 100%; /* Largura total do botão */
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.details-button:hover {
+  background-color: #0056b3;
+}

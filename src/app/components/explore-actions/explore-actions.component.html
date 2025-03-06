@@ -1,0 +1,16 @@
+<div class="explore-container">
+  <h1>Explorar Ações</h1>
+  <p>Buscar ações, organizações ou locais</p>
+
+  <section>
+    <h2>Todos</h2>
+    <div class="actions-list">
+      <div *ngFor="let action of actions" class="action-card">
+        <h3>{{ action.title }}</h3>
+        <p>{{ action.organization }}</p>
+        <p>Data: {{ action.date }}</p>
+        <button>Ver Detalhes</button>
+      </div>
+    </div>
+  </section>
+</div>

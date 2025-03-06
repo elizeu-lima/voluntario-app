@@ -1,0 +1,32 @@
+<div class="profile-container">
+  <button (click)="goBack()" class="back-button">Voltar</button>
+  <h1>Complete seu Perfil</h1>
+  <p>Complete seu perfil para melhorar suas chances de encontrar oportunidades de voluntariado.</p>
+
+  <section>
+    <h2>Pessoal</h2>
+    <p><strong>Nome completo:</strong> {{ user.name }}</p>
+    <p><strong>Telefone:</strong> {{ user.phone }}</p>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <p><strong>Endereço:</strong> {{ user.address }}</p>
+  </section>
+
+  <section>
+    <h2>Habilidades</h2>
+    <ul>
+      <li *ngFor="let skill of skills">{{ skill }}</li> <!-- *ngFor funciona agora -->
+    </ul>
+  </section>
+
+  <section>
+    <h2>Preferências</h2>
+    <ul>
+      <li *ngFor="let preference of preferences">{{ preference }}</li> <!-- *ngFor funciona agora -->
+    </ul>
+  </section>
+
+  <section>
+    <h2>Biografia</h2>
+    <textarea placeholder="Conte um pouco sobre você..."></textarea>
+  </section>
+</div>

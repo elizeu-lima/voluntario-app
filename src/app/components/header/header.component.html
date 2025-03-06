@@ -1,0 +1,25 @@
+<div class="header">
+  <!-- Parte esquerda: Ícone de voltar e texto "Painel do Voluntário" -->
+  <div class="left-section">
+    <button (click)="goBack()" class="back-button">
+      <fa-icon [icon]="faArrowLeft"></fa-icon>
+    </button>
+    <span class="panel-title">Painel do Voluntário</span>
+  </div>
+
+  <!-- Parte direita: Nome, e-mail e ícone de logout -->
+  <div class="right-section">
+    <div class="user-info">
+      <div class="user-icon">
+        {{ userInitial }}
+      </div>
+      <div class="user-details">
+
+        <span class="user-email">{{ userEmail }}</span>
+      </div>
+    </div>
+    <button (click)="logout()" class="logout-button">
+      <fa-icon [icon]="faSignOutAlt"></fa-icon>
+    </button>
+  </div>
+</div>

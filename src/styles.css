@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.css */
+body {
+  font-family: 'Roboto', sans-serif; /* Use a fonte Roboto ou outra similar */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif; /* Garante que os títulos usem a mesma fonte */
+}
+
+button {
+  font-family: 'Roboto', sans-serif; /* Garante que os botões usem a mesma fonte */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
