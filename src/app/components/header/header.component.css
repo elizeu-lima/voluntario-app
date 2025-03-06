@@ -93,3 +93,42 @@
 .logout-button:hover {
   background-color: rgba(0, 0, 0, 0.05); /* Efeito hover no botão */
 }
+@media(max-width: 768px){
+  .header {
+    padding: 5px;
+  }
+  .left-section {
+    gap: 5px;
+  }
+  .back-button {
+    font-size: 16px;
+    padding: 6px;
+  }
+  .panel-title {
+    font-size: 11px;
+  }
+  .right-section {
+    gap: 10px;
+  }
+  .voltar{
+    font-size: 11px;
+    padding: 3px;
+  }
+  .user-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+  .user-name {
+    font-size: 14px;
+  }
+  .user-email {
+    font-size: 12px;
+  }
+  .logout-button {
+    font-size: 16px;
+    padding: 6px;
+  }
+}
+
+

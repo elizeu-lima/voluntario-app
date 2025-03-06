@@ -1,11 +1,16 @@
 <div class="details-container">
-  <h1>{{ action?.title }}</h1>
-  <p>{{ action?.organization }}</p>
-  <p>Data: {{ action?.date }}</p>
+  <div class="acoes">
+    <button (click)="goBack()" class="back-button">
+      <fa-icon class="voltar" [icon]="faArrowLeft"></fa-icon>
+    </button>
+    <h1>{{ action?.title }}</h1>
+    <p class="organization">{{ action?.organization }}</p>
+    <p class="date">Data: {{ action?.date }}</p>
+  </div>
 
   <section>
     <h2>Sobre a Ação</h2>
-    <p>Descrição detalhada da ação...</p>
+    <p>{{ action?.description }}</p>
   </section>
 
   <section>
@@ -18,7 +23,7 @@
 
   <section>
     <h2>Localização</h2>
-    <p>Parque Ibirapuera, São Paulo</p>
+    <p>{{ action?.location }}</p>
   </section>
 
   <section>

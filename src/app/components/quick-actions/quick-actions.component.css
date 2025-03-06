@@ -85,3 +85,141 @@
 .explore-button:hover {
   background-color: #0056b3; /* Tom mais escuro de azul no hover */
 }
+@media (max-width: 768px) {
+  .actions-grid {
+    flex-direction: column; /* Mudar para layout de coluna em telas menores */
+  }
+
+  .action-card {
+    margin: 0; /* Remover margem lateral */
+    margin-bottom: 20px; /* Adicionar margem inferior */
+  }
+
+  .action-card.left {
+    border-radius: 8px 8px 0 0; /* Borda arredondada apenas no topo */
+  }
+
+  .action-card.right {
+    border-radius: 0 0 8px 8px; /* Borda arredondada apenas na base */
+  }
+  profile-button:hover {
+    background-color: #007bff; /* Fundo azul no hover */
+    color: white; /* Texto branco no hover */
+    border-color: #007bff; /* Borda azul no hover */
+  }
+}
+.quick-actions-container {
+  background-color: #f4f4f4; /* Fundo do container principal (cor do body) */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.quick-actions-container h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.actions-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Espaço entre as duas seções */
+}
+
+.action-card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white; /* Fundo branco para as seções */
+  border: 1px solid #e0e0e0; /* Borda cinza leve */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra discreta */
+  transition: all 0.3s ease; /* Transição suave para todos os efeitos */
+}
+
+.action-card:hover {
+  background-color: #f7f7f7; /* Cor de fundo mais clara no hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra mais intensa no hover */
+  transform: translateY(-5px); /* Levanta o cartão levemente */
+}
+
+.action-card.left {
+  margin-right: 10px; /* Ajuste para alinhar à esquerda */
+}
+
+.action-card.right {
+  margin-left: 10px; /* Ajuste para alinhar à direita */
+}
+
+.action-card h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.action-description {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 15px;
+}
+
+/* Estilo do botão "Completar Perfil" */
+.profile-button {
+  width: auto; /* Tamanho automático (menor) */
+  padding: 8px 16px; /* Padding menor */
+  background-color: white; /* Fundo branco */
+  color: #333333; /* Texto preto */
+  border: 1px solid #e0e0e0; /* Borda cinza */
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Adicionando transição para transformação */
+}
+
+.profile-button:hover {
+  background-color: #007bff; /* Fundo azul no hover */
+  color: white; /* Texto branco no hover */
+  border-color: #007bff; /* Borda azul no hover */
+  transform: translateY(-2px); /* Levanta o botão um pouco */
+}
+
+/* Estilo do botão "Explorar Ações" */
+.explore-button {
+  width: auto; /* Tamanho automático */
+  padding: 8px 16px; /* Padding menor */
+  background-color: #007bff; /* Fundo azul */
+  color: white; /* Texto branco */
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave para a cor de fundo e transformação */
+}
+
+.explore-button:hover {
+  background-color: #0056b3; /* Tom mais escuro de azul no hover */
+  transform: translateY(-2px); /* Levanta o botão um pouco */
+}
+
+@media (max-width: 768px) {
+  .actions-grid {
+    flex-direction: column; /* Mudar para layout de coluna em telas menores */
+  }
+
+  .action-card {
+    margin: 0; /* Remover margem lateral */
+    margin-bottom: 20px; /* Adicionar margem inferior */
+  }
+
+  .action-card.left {
+    border-radius: 8px 8px 0 0; /* Borda arredondada apenas no topo */
+  }
+
+  .action-card.right {
+    border-radius: 0 0 8px 8px; /* Borda arredondada apenas na base */
+  }
+}

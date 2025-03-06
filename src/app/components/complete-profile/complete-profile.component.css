@@ -1,6 +1,7 @@
 .complete-profile-container {
   max-width: 800px;
   margin: 0 auto;
+  margin-top: 60px;
   padding: 20px;
   background-color: white;
   border-radius: 8px;
@@ -79,4 +80,14 @@ h1 {
 
 .save-button:hover {
   background-color: #0056b3;
+}
+.back-button {
+  background: none;
+  border: none;
+  color: #333333; /* Cor do ícone de voltar */
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
 }

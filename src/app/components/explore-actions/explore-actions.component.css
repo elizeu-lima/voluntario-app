@@ -1,7 +1,28 @@
+/* Container principal */
 .explore-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  background-color: #f9f9f9; /* Fundo suave */
+  border-radius: 8px;
+}
+
+.explorar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.explorar h1 {
+  font-size: 28px;
+  color: #333;
+  font-weight: 600;
+}
+
+.explorar p {
+  font-size: 16px;
+  color: #666;
 }
 
 .actions-list {
@@ -14,18 +35,87 @@
   background-color: white;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+  transition: all 0.3s ease; /* Efeito de transição */
 }
 
-button {
-  padding: 10px;
+.action-card:hover {
+  transform: translateY(-5px); /* Levanta o cartão ao passar o mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Aumenta a sombra no hover */
+}
+
+.action-card h3 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.organization {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.date {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.details-button {
+  width: 100%;
+  padding: 12px;
   background-color: #007bff;
   color: white;
   border: none;
-  cursor: pointer;
   border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
+.details-button:hover {
   background-color: #0056b3;
+}
+
+/* Botão de voltar */
+.back-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.1); /* Leve aumento ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+  .explorar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .explorar h1 {
+    font-size: 24px;
+  }
+
+  .actions-list {
+    grid-template-columns: 1fr;
+  }
+
+  .action-card {
+    margin-bottom: 20px;
+  }
+
+  .details-button {
+    font-size: 16px;
+  }
 }

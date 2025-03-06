@@ -13,7 +13,8 @@
       <h3>{{ action.title }}</h3>
       <p class="organization">{{ action.organization }}</p>
       <p class="date"><strong>Data: {{ action.date }}</strong></p>
-      <button class="details-button">Ver Detalhes</button>
+      <button class="details-button" (click)="verdetalhes(action.id)">Ver Detalhes</button>
+
     </div>
   </div>
 </div>
